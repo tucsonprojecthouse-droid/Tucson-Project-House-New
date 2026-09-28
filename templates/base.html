@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site_name }} — Music. Fashion. Film.</title>
+
+  <!-- Each section has its own small CSS file, so styles are easy to find and change.
+       These live in /public/css and are served directly at /css/... both locally
+       and on Vercel (see routes/public_assets.py and README.md). -->
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/hero.css">
+  <link rel="stylesheet" href="/css/buttons.css">
+  <link rel="stylesheet" href="/css/events.css">
+  <link rel="stylesheet" href="/css/modal.css">
+  <link rel="stylesheet" href="/css/what_we_do.css">
+  <link rel="stylesheet" href="/css/gallery.css">
+  <link rel="stylesheet" href="/css/newsletter.css">
+  <link rel="stylesheet" href="/css/partners.css">
+  <link rel="stylesheet" href="/css/footer.css">
+</head>
+<body>
+
+  {% block content %}{% endblock %}
+
+  <!-- Each interactive piece has its own small JS file. -->
+  <script src="/js/filters.js"></script>
+  <script src="/js/calendar.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/newsletter.js"></script>
+</body>
+</html>
